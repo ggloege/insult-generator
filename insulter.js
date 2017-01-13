@@ -2,7 +2,7 @@ function insult(array1, array2, array3) {
   let part1 = array1[Math.floor(Math.random() * array1.length)];
   let part2 = array2[Math.floor(Math.random() * array2.length)];
   let part3 = array3[Math.floor(Math.random() * array3.length)];
-  return "Thou arte a " + part1 + " " + part2 + " " + part3
+  return "Thou arte a " + part1 + ", " + part2 + " " + part3
 }
 
 var insultList1 = [
@@ -50,7 +50,7 @@ var insultList1 = [
   "tottering",
   "unmuzzled",
   "vain",
-  "nevomed",
+  "venomed",
   "villainous",
   "warped",
   "wayward",
