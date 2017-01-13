@@ -1,8 +1,19 @@
 function insult(array1, array2, array3) {
   let part1 = array1[Math.floor(Math.random() * array1.length)];
+  let article = grammar(part1);
   let part2 = array2[Math.floor(Math.random() * array2.length)];
   let part3 = array3[Math.floor(Math.random() * array3.length)];
-  return "Thou arte a " + part1 + ", " + part2 + " " + part3
+  return "Thou arte " + article + " " + part1 + ", " + part2 + " " + part3 + "!"
+}
+
+function grammar(word) {
+  var vowels = ["a", "e", "i", "o", "u"];
+  for (var i = 0; i < vowels.length; i++) {
+    if (vowels[i] == word[0]) {
+      return "an";
+    }
+  }
+  return "a";
 }
 
 var insultList1 = [
