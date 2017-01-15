@@ -3,7 +3,7 @@ function insult(array1, array2, array3) {
   let article = grammar(part1);
   let part2 = array2[Math.floor(Math.random() * array2.length)];
   let part3 = array3[Math.floor(Math.random() * array3.length)];
-  return "Thou arte " + article + " " + part1 + ", " + part2 + " " + part3 + "!"
+  return "Thou art " + article + " " + part1 + ", " + part2 + " " + part3 + "!"
 }
 
 function grammar(word) {
